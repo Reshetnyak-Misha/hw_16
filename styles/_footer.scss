@@ -1,0 +1,52 @@
+@import "variables";
+
+.footer {
+  background: $main-footer-background-color;
+
+  &-logo {
+    display: flex;
+    overflow: hidden;
+    gap: 40px;
+  }
+
+  a {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #5E647A;
+  }
+
+  &__company {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #535FE6;
+  }
+
+  &__address {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: #5E647A;
+  }
+
+  &__year {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+  }
+
+  &__privacy {
+    color: #FFF;
+  }
+}
+

@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Adex</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container-lg d-flex align-items-center wrapper">
+            <div class="col-1">
+                <img src="img/header/logo.png" alt="">
+            </div>
+            <div class="col-4 container-fluid">
+                <nav>
+                    <ul class="d-flex gap-2 align-items-center navigation">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Invest</a>
+                        </li>
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                        <li>
+                            <div class="dropdown check-mark">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="img/header/menu.svg" alt=""></a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="#">Privacy</a></li>
+                                    <li><a class="dropdown-item" href="#">How to start</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class=" d-none d-lg-block col-2">
+                <img src="img/header/twit.svg" alt="twit">
+                <img src="img/header/face.svg" alt="face">
+                <img src="img/header/youtube.svg" alt="youtube">
+                <img src="img/header/telegram.svg" alt="telegram">
+            </div>
+            <div class="d-flex align-items-center gap-1 container-fluid col-1 ">
+                <img src="img/header/eng.svg" alt="eng">
+                <span class="language">English</span>
+            </div>
+            <div class="d-none d-xxl-block  col-2  gap-2">
+                <button type="button" class="btn btn-primary button-dashboard">Dashboard</button>
+                <button type="button" class="btn btn-outline-light">Logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="options d-flex align-items-center ">
+        <div class="container d-flex justify-content-between  col-10 flex-wrap">
+            <button type="button" class="btn btn-dark d-flex align-items-center gap-1"><span><img
+                    src="img/header/Subtract.svg" alt="Subtract"></span>Dashboard
+            </button>
+            <button type="button" class="btn btn-dark d-flex align-items-center gap-1"><span><img
+                    src="img/header/Subtract.svg" alt="Subtract"></span>Deposits
+            </button>
+            <button type="button" class="btn btn-dark d-flex align-items-center gap-1"><span><img
+                    src="img/header/Subtract.svg" alt="Subtract"></span>Transactions
+            </button>
+            <button type="button" class="btn btn-dark d-flex align-items-center gap-1"><span><img
+                    src="img/header/Subtract.svg" alt="Subtract"></span>Withdraw
+            </button>
+            <button type="button" class="btn btn-dark d-flex align-items-center gap-1"><span><img
+                    src="img/header/Subtract.svg" alt="Subtract"></span>Partners
+            </button>
+            <button type="button" class="btn btn-dark d-flex align-items-center gap-1"><span><img
+                    src="img/header/Subtract.svg" alt="Subtract"></span>Top Up
+            </button>
+            <button type="button" class="btn btn-dark d-flex align-items-center gap-1"><span><img
+                    src="img/header/Subtract.svg" alt="Subtract"></span>Settings
+            </button>
+            <img src="img/header/Group%20175.svg" alt="">
+            <button type="button" class="btn btn-light deposit d-flex align-items-center gap-1" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><span>
+                <img src="img/header/Subtract2.svg" alt=""></span>New deposit
+            </button>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section>
+        <div class="main-background">
+            <div class="container d-flex flex-wrap gap-5 py-5 main-content-wrapper">
+                <div class="col-7">
+                    <div class="d-flex gap-2">
+                        <div>
+                            <img src="img/main/decore.svg" alt="">
+                        </div>
+                        <div>
+                            <h2 class="main-tittle">My deposits</h2>
+                            <p class="main-content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                sint.</p>
+                        </div>
+                    </div>
+                    <div class="filter d-flex gap-5">
+                        <div class="dropdown">
+                            <span>Filter by:</span>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Start date
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Start date</a></li>
+                                <li><a class="dropdown-item" href="#">End date</a></li>
+                                <li><a class="dropdown-item" href="#">Activity</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span>Sort by currency:</span>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark ">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">BTC</a></li>
+                                <li><a class="dropdown-item" href="#">ETH</a></li>
+                                <li><a class="dropdown-item" href="#">USDT</a></li>
+                                <li><a class="dropdown-item" href="#">BNB</a></li>
+                                <li><a class="dropdown-item" href="#">DOGE</a></li>
+                                <li><a class="dropdown-item" href="#">XRP</a></li>
+                                <li><a class="dropdown-item" href="#">USDC</a></li>
+                                <li><a class="dropdown-item" href="#">UNI</a></li>
+                                <li><a class="dropdown-item" href="#">BCH</a></li>
+                                <li><a class="dropdown-item" href="#">CHAIN</a></li>
+                                <li><a class="dropdown-item" href="#">LTC</a></li>
+                                <li><a class="dropdown-item" href="#">TRON</a></li>
+                                <li><a class="dropdown-item" href="#">NEO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info  d-flex align-items-center ">
+                        <div class="col-3">
+                            <p class="p-4">Deposit</p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-1">
+                            <p>Status</p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-1">
+                            <p>Invested</p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-2">
+                            <p>Total Profit</p>
+                        </div>
+                        <div class="col-2">
+                            <p>Re-invest</p>
+                        </div>
+                    </div>
+                    <!--                // 1-->
+                    <div class="assets  rounded-4">
+                        <div class="d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center gap-1">
+                                <span class="percent">2.4%</span>
+                                <p class="assets__daily">daily for 30 days</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1 d-flex gap-2 align-items-center ">
+                                <button type="button" class="btn btn-primary rounded-pill button-size"
+                                        data-bs-toggle="popover" data-bs-content="thanks">
+                                    active
+                                </button>
+                                <span class="colorize-value">USD</span>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1">
+                                <p class="assets__profit">+1.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="assets__total-profit">10.000.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked"></label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25 col-3">
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-75"></div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-4">
+                                <p class="assets__content"><span>Start:</span>10 June 2021 13:00:49 p.m.</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="assets__content"><span>End:</span>10 June 2021 13:00:49 p.m.</p>
+                            </div>
+                            <div>
+                                <img src="img/main/line.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--// 2-->
+                    <div class="assets gap-0  rounded-4">
+                        <div class="d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center gap-1">
+                                <span class="percent">2.4%</span>
+                                <p class="assets__daily">daily for 30 days</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1 d-flex gap-2">
+                                <img src="img/main/Frame%20840.png" alt="active">
+                                <span class="colorize-value">USD</span>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1">
+                                <p class="assets__profit">+1.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="assets__total-profit">10.000.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultThree">
+                                <label class="form-check-label" for="flexCheckDefaultThree"></label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25 col-3">
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-75"></div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-4">
+                                <p class="assets__content"><span class="">Start:</span>10 June 2021 13:00:49 p.m.</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="assets__content"><span>End:</span>10 June 2021 13:00:49 p.m.</p>
+                            </div>
+                            <div>
+                                <img src="img/main/line.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                // 3-->
+                    <div class="assets-completed gap-0  rounded-4">
+                        <div class="d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center gap-1">
+                                <span class="percent">2.4%</span>
+                                <p class="assets-completed__daily">daily for 30 days</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1 d-flex gap-2">
+                                <button type="button" class="btn btn-primary rounded-pill button-size"
+                                        id="liveToastBtn">active
+                                </button>
+
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div id="liveToast" class="toast" role="alert" aria-live="assertive"
+                                         aria-atomic="true">
+                                        <div class="toast-header">
+                                            <img src="img/header/logo.png" class="rounded me-2" alt="">
+                                            <strong class="me-auto">Bootstrap</strong>
+                                            <small>1 mins ago</small>
+                                            <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="toast-body">
+                                            Thanks
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="colorize-value">USD</span>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1">
+                                <p class="assets-completed__profit">+1.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="assets-completed__total-profit">10.000.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultFour"
+                                       checked>
+                                <label class="form-check-label" for="flexCheckDefaultFour"></label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25 col-3">
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-100"></div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-4">
+                                <p class="assets-completed__content"><span class="">Start:</span>10 June 2021 13:00:49
+                                    p.m.
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <p class="assets-completed__content"><span>End:</span>10 June 2021 13:00:49 p.m.</p>
+                            </div>
+                            <div>
+                                <img src="img/main/line-active.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                // 4-->
+                    <div class="assets-completed gap-0  rounded-4">
+                        <div class="d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center gap-1">
+                                <span class="percent">2.4%</span>
+                                <p class="assets-completed__daily">daily for 30 days</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1 d-flex gap-2">
+                                <button class="btn btn-primary rounded-pill button-size" data-toggle="tooltip" data-placement="top" title="Hooray!" >
+                                    active
+                                </button>
+                                <span class="colorize-value">USD</span>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1">
+                                <p class="assets-completed__profit">+1.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="assets-completed__total-profit">10.000.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultFive"
+                                       checked>
+                                <label class="form-check-label" for="flexCheckDefaultFive"></label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25 col-3">
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-100"></div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-4">
+                                <p class="assets-completed__content"><span class="">Start:</span>10 June 2021 13:00:49
+                                    p.m.
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <p class="assets-completed__content"><span>End:</span>10 June 2021 13:00:49 p.m.</p>
+                            </div>
+                            <div>
+                                <img src="img/main/line-active.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--                // 5-->
+                    <div class="assets-completed gap-0  rounded-4">
+                        <div class="d-flex align-items-center">
+                            <div class="col-3 d-flex align-items-center gap-1">
+                                <span class="percent">2.4%</span>
+                                <p class="assets-completed__daily">daily for 30 days</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1 d-flex gap-2">
+                                <img src="img/main/Frame%20840.png" alt="active">
+                                <span class="colorize-value">USD</span>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-1">
+                                <p class="assets-completed__profit">+1.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                <p class="assets-completed__total-profit">10.000.000</p>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultTwo"
+                                       checked>
+                                <label class="form-check-label" for="flexCheckDefaultTwo"></label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="w-25 col-3">
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar w-100"></div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-4">
+                                <p class="assets-completed__content"><span class="">Start:</span>10 June 2021 13:00:49
+                                    p.m.
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <p class="assets-completed__content"><span>End:</span>10 June 2021 13:00:49 p.m.</p>
+                            </div>
+                            <div>
+                                <img src="img/main/line-active.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 info-deposits">
+                    <div class="info-deposits__wrapper">
+                        <div>
+                            <h2>Info</h2>
+                            <p>of deposits</p>
+                        </div>
+                        <img src="img/main/Group%20866.svg" alt="">
+                        <div>
+                            <img src="img/main/partner.png" alt="">
+                        </div>
+                        <span>Velit officia consequat duis enim velit mollit. </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+
+    if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show()
+        })
+    }
+</script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+<footer class="">
+    <div class="footer">
+        <div class="footer-logo py-5">
+            <img src="img/footer/eth.svg" alt="">
+            <img src="img/footer/logo%20dogecoin.svg" alt="">
+            <img src="img/footer/tether.svg" alt="">
+            <img src="img/footer/eth.svg" alt="">
+            <img src="img/footer/logo%20dogecoin.svg" alt="">
+            <img src="img/footer/tether.svg" alt="">
+            <img src="img/footer/eth.svg" alt="">
+            <img src="img/footer/logo%20dogecoin.svg" alt="">
+            <img src="img/footer/tether.svg" alt="">
+            <img src="img/footer/eth.svg" alt="">
+            <img src="img/footer/logo%20dogecoin.svg" alt="">
+            <img src="img/footer/tether.svg" alt="">
+            <img src="img/footer/logo%20dogecoin.svg" alt="">
+            <img src="img/footer/tether.svg" alt="">
+        </div>
+        <div class="container-lg d-flex align-items-center justify-content-between">
+            <div>
+                <img src="img/header/logo.png" alt="">
+            </div>
+            <div>
+                <div class="d-flex ">
+                    <span class="footer__company me-2">Check our company</span>
+                    <img src="img/footer/arrow.svg" alt="">
+                </div>
+                <address class="footer__address">4517 Washington Ave. Manchester, <br> Kentucky 39495</address>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Investment</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-primary rounded-pill">Start Investment</button>
+            </div>
+        </div>
+        <div class="container-lg d-flex justify-content-between align-items-center pb-5 ">
+            <div class="col-5">
+                <span class="footer__year">© 2021 Adex Capital Limited. All rights are reserved.</span>
+            </div>
+            <div class="col-2">
+                <img src="img/header/twit.svg" alt="twit">
+                <img src="img/header/face.svg" alt="face">
+                <img src="img/header/youtube.svg" alt="youtube">
+                <img src="img/header/telegram.svg" alt="telegram">
+            </div>
+            <div class="d-flex footer__privacy gap-2">
+                <div>
+                    <span>Terms & Conditions</span>
+                </div>
+                <div>
+                    <span>Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
